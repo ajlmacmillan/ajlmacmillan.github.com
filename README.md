@@ -21,6 +21,7 @@ The site can be found [here](https://ajlmacmillan.github.io/)
 
 ```text
 ├── css/             # Site styling
+├── img/             # Images
 ├── js/              # SIte interactivity
 ├── pages/           # Site HTML pages
 ├── CNAME            # GitHub Pages DNS name
