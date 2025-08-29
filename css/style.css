@@ -56,4 +56,19 @@ body {
 }
 
 /* Content styles */
-.content-container {}
+.content-container {
+    margin: 50px 0;
+}
+
+
+/* Footer styles */
+.footer-container {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #ececec;
+    margin-top: 20px;
+}
+.footer-text {
+    color: var(--primary);
+    font-size: 1rem;
+}
