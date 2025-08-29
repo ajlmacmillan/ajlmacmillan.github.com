@@ -3,7 +3,7 @@
 ## 🌐 About
 
 This site is a space for me to share my journey into creative writing and copywriting.
-I'll add short stories, blog posts, samples of copy, and links to other articles or
+I'll add short Creative, blog posts, samples of copy, and links to other articles or
 publications I find useful. Writing is something I've also wanted to pursue in more
 depth so this will allow me document my findings and creations as I develop as a writer
 and content creator.
