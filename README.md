@@ -1,4 +1,4 @@
-# SedexDev Blog
+# Living Copy
 
 ## 🌐 About
 
