@@ -20,8 +20,12 @@ The site can be found [here](https://ajlmacmillan.github.io/)
 ## 📁 Folder Structure
 
 ```text
-├── index.html
-└── README.md
+├── css/             # Site styling
+├── js/              # SIte interactivity
+├── pages/           # Site HTML pages
+├── CNAME            # GitHub Pages DNS name
+├── index.html       # Site landing page
+└── README.md        # This README.md file
 ```
 
 ## 🧑‍💻 How to Run Locally
