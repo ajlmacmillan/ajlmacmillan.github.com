@@ -135,18 +135,20 @@ body {
     color: var(--primary);
     font-style: italic;
 }
-.announcements-container {
+
+/* Cards */
+.cards-container {
     line-height: 25px;
     letter-spacing: 1px;
 }
-.announcements-header-container {
+.cards-header-container {
     text-align: center;
     margin: 80px 0 50px 0;
 }
-.announcements-header {
+.cards-header {
     padding-bottom: 20px;
 }
-.announcement {
+.card {
     border-width: 1px;
     border-style: solid;
     border-image: linear-gradient(to top right, var(--primary), var(--secondary), var(--background)) 1;
