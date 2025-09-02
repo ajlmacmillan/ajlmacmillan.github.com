@@ -166,8 +166,8 @@ body {
     margin: 40px 0;
     padding: 20px;
 }
-.card-title {}
-.card-date {}
+/* .card-title {}
+.card-date {} */
 .card-summary {
     font-style: italic;
 }
@@ -256,6 +256,7 @@ body {
         display: block;
     }
     .story-content {
+        line-height: 30px;
         letter-spacing: 0;
     }
 }
