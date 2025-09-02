@@ -10,7 +10,7 @@ creations as I develop as a writer and content creator.
 
 ## 🚀 Live Site
 
-The site can be found [here](https://ajlmacmillan.github.io/)
+The site can be found [here](https://www.livingcopy.uk/)
 
 ## 🛠️ Built With
 
