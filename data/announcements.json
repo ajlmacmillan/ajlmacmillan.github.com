@@ -1,3 +1,10 @@
 {
-    "data": []
+    "data": [
+        {
+            "title": "New Creative Project Added",
+            "description": "A new creative writing project titled 'The Barn' has been added to the Creative section. Explore the eerie tale of a farmer's unsettling discovery.",
+            "date": "2nd September, 2025",
+            "url": "pages/creative/the_barn.html"
+        }
+    ]
 }

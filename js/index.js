@@ -73,7 +73,7 @@ function loadAnnouncements(data) {
 
         const date = document.createElement("p");
         date.className = "card-date";
-        date.textContent = item.date;
+        date.textContent = `Published: ${item.date}`;
 
         const description = document.createElement("p");
         description.className = "card-summary";
@@ -121,7 +121,7 @@ function loadTagged(data) {
 
         const link = document.createElement("a");
         link.className = "card-link";
-        link.href = `https://www.livingcopy.uk/${item.url}`;
+        link.href = item.url;
         link.textContent = "Read More";
 
         card.appendChild(title);

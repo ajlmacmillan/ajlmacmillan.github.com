@@ -4,7 +4,7 @@
             "title": "The Barn",
             "description": "A farmer wakes up to an eerie realisation that he does not know where his wife is and some of his livestock have been slaughtered. A mysterious wooden carving has appeared in the pig pen, leading to the farmers journey into the barn...",
             "published": "2nd September, 2025",
-            "url": "pages/creative/the_barn.html",
+            "url": "./the_barn.html",
             "tags": ["folk", "suspense", "horror"]
         }
     ]
