@@ -205,12 +205,13 @@ body {
     padding: 50px 0;
 }
 .story-content {
+    width: 75%;
     font-family: 'Courier New', Courier, monospace;
     text-align: justify;
     font-size: 1.1rem;
     line-height: 35px;
     letter-spacing: 1px;
-    margin: 50px 0;
+    margin: 50px auto;
 }
 .story-content p {
     text-indent: 40px;
@@ -256,6 +257,7 @@ body {
         display: block;
     }
     .story-content {
+        width: 90%;
         line-height: 30px;
         letter-spacing: 0;
     }
