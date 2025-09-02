@@ -149,6 +149,7 @@ body {
 .cards-container {
     line-height: 25px;
     letter-spacing: 1px;
+    margin: 80px 0;
 }
 .cards-header-container {
     text-align: center;
@@ -164,6 +165,31 @@ body {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     margin: 40px 0;
     padding: 20px;
+}
+.card-title {}
+.card-date {}
+.card-summary {
+    font-style: italic;
+}
+.card-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.card-tag {
+    background-color: var(--secondary);
+    color: var(--text);
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+.card-link {
+    text-decoration: none;
+    color: var(--text);
+}
+.card-link:hover {
+    color: var(--accent);
+    transition: ease-in-out 0.2s;
 }
 
 /* Story styles */

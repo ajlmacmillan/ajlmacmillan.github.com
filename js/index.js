@@ -104,7 +104,7 @@ function loadTagged(data) {
 
         const published = document.createElement("p");
         published.className = "card-date";
-        published.textContent = item.published;
+        published.textContent = `Published: ${item.published}`;
 
         const description = document.createElement("p");
         description.className = "card-summary";
@@ -121,7 +121,7 @@ function loadTagged(data) {
 
         const link = document.createElement("a");
         link.className = "card-link";
-        link.href = item.url;
+        link.href = `https://www.livingcopy.uk/${item.url}`;
         link.textContent = "Read More";
 
         card.appendChild(title);
@@ -150,10 +150,6 @@ function loadPortfolioProjects(data) {
         const title = document.createElement("h3");
         title.className = "card-title";
         title.textContent = item.title;
-
-        const date = document.createElement("p");
-        date.className = "card-date";
-        date.textContent = item.date;
 
         const description = document.createElement("p");
         description.className = "card-description";
