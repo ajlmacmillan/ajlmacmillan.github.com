@@ -27,6 +27,15 @@ body {
     background-image: linear-gradient(to left, var(--primary), var(--secondary));
     margin: auto
 }
+.back-button {
+    height: auto;
+    width: 40px;
+    cursor: pointer;
+}
+.back-button:hover {
+    transform: scale(1.2);
+    transition: ease-in-out 0.3s;
+}
 
 /* Header styles */
 .header-container {
@@ -157,6 +166,38 @@ body {
     padding: 20px;
 }
 
+/* Story styles */
+.story-container {
+    color: var(--text);
+    text-align: center;
+    margin: 50px 0;
+}
+.story-header {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 30px;
+    padding: 50px 0;
+}
+.story-content {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 35px;
+    letter-spacing: 1px;
+    margin: 50px 0;
+}
+.story-content p {
+    text-indent: 40px;
+}
+.story-end {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;;
+    font-weight: bold;
+    margin: 40px 0;
+    font-size: 1.2rem;
+    color: var(--text);
+}
+
 /* Footer styles */
 .footer-container {
     text-align: center;
@@ -187,5 +228,8 @@ body {
     }
     #burger-icon {
         display: block;
+    }
+    .story-content {
+        letter-spacing: 0;
     }
 }

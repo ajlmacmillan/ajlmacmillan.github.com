@@ -1,7 +1,11 @@
 {
     "data": [
         {
-            "title": "Testing new creative project data entry"
+            "title": "The Barn",
+            "description": "A farmer wakes up one day to find a mother pig has lost 3 of her young, he does not know where his wife is, and a mysterious wooden carving is trying to tell him something...",
+            "published": "2nd September, 2025",
+            "url": "pages/creative/the_barn.html",
+            "tags": ["folk", "suspense", "horror"]
         }
     ]
 }
