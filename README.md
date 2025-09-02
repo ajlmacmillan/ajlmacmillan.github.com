@@ -3,10 +3,10 @@
 ## 🌐 About
 
 This site is a space for me to share my journey into creative writing and copywriting.
-I'll add short Creative, blog posts, samples of copy, and links to other articles or
-publications I find useful. Writing is something I've also wanted to pursue in more
-depth so this will allow me document my findings and creations as I develop as a writer
-and content creator.
+I'll add short works of fiction, blog posts, samples of copy, and links to other articles
+or publications I find interesting or useful. I want to pursue writing as a hobby and
+potential income stream in more depth so this will allow me document my findings and
+creations as I develop as a writer and content creator.
 
 ## 🚀 Live Site
 
@@ -21,6 +21,7 @@ The site can be found [here](https://ajlmacmillan.github.io/)
 
 ```text
 ├── css/             # Site styling
+├── data/            # Data files for site content
 ├── img/             # Images
 ├── js/              # SIte interactivity
 ├── pages/           # Site HTML pages
