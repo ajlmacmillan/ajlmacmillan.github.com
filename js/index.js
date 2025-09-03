@@ -69,20 +69,20 @@ function loadAnnouncements(data) {
 
         const title = document.createElement("h3");
         title.className = "card-title";
-        title.textContent = item.title;
+        title.innerHTML = item.title;
 
         const date = document.createElement("p");
         date.className = "card-date";
-        date.textContent = `Published: ${item.date}`;
+        date.innerHTML = `Published: ${item.date}`;
 
         const description = document.createElement("p");
         description.className = "card-summary";
-        description.textContent = item.description;
+        description.innerHTML = item.description;
 
         const link = document.createElement("a");
         link.className = "card-link";
         link.href = item.url;
-        link.textContent = "Read More";
+        link.innerHTML = "Read More";
 
         card.appendChild(title);
         card.appendChild(date);
@@ -100,29 +100,29 @@ function loadTagged(data) {
 
         const title = document.createElement("h3");
         title.className = "card-title";
-        title.textContent = item.title;
+        title.innerHTML = item.title;
 
         const published = document.createElement("p");
         published.className = "card-date";
-        published.textContent = `Published: ${item.published}`;
+        published.innerHTML = `Published: ${item.published}`;
 
         const description = document.createElement("p");
         description.className = "card-summary";
-        description.textContent = item.description;
+        description.innerHTML = item.description;
 
         const tags = document.createElement("div");
         tags.className = "card-tags";
         item.tags.forEach((tag) => {
             const tagSpan = document.createElement("span");
             tagSpan.className = "card-tag";
-            tagSpan.textContent = tag;
+            tagSpan.innerHTML = tag;
             tags.appendChild(tagSpan);
         });
 
         const link = document.createElement("a");
         link.className = "card-link";
         link.href = item.url;
-        link.textContent = "Read More";
+        link.innerHTML = "Read More";
 
         card.appendChild(title);
         card.appendChild(published);
@@ -149,24 +149,24 @@ function loadPortfolioProjects(data) {
 
         const title = document.createElement("h3");
         title.className = "card-title";
-        title.textContent = item.title;
+        title.innerHTML = item.title;
 
         const description = document.createElement("p");
         description.className = "card-description";
-        description.textContent = item.description;
+        description.innerHTML = item.description;
 
         const company = document.createElement("p");
         company.className = "card-company";
-        company.textContent = item.company;
+        company.innerHTML = item.company;
 
         const industry = document.createElement("p");
         industry.className = "card-industry";
-        industry.textContent = item.industry;
+        industry.innerHTML = item.industry;
 
         const link = document.createElement("a");
         link.className = "card-link";
         link.href = item.url;
-        link.textContent = "View Project";
+        link.innerHTML = "View Project";
 
         card.appendChild(image);
         metaContainer.appendChild(title);
