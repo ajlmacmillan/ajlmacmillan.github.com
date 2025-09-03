@@ -122,6 +122,22 @@ body {
     margin: 0;
 }
 
+/* Content TBA styles */
+.content-tba {
+    text-align: center;
+    margin: 80px 0;
+}
+.content-tba-img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.content-tba-msg {
+    font-size: 1.2rem;
+    color: var(--text);
+    font-style: italic;
+}
+
 /* Content styles */
 .content-container {
     margin: 50px 0;
