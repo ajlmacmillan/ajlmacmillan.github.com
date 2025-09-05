@@ -1,6 +1,12 @@
 {
     "data": [
         {
+            "title": "&#128204; Blog Post Published",
+            "description": "How hard can it be to write a book? Based on my experience, it can take a very long time, can require a lot of back filling, and feel like the end is a distant dream. Joy and hope however, are ever present.",
+            "date": "5th, September 2025",
+            "url": "./pages/blog/how_hard_can_it_be_to_write_a_book.html"
+        },
+        {
             "title": "&#128218; New Creative Project Added",
             "description": "A new creative writing project titled 'The Barn' has been added to the Creative section. Explore the eerie tale of a farmer's unsettling discovery.",
             "date": "2nd September, 2025",

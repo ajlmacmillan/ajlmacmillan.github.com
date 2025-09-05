@@ -24,8 +24,12 @@ body {
     display: block;
     width: 70px;
     height: 2px;
-    background-image: linear-gradient(to left, var(--primary), var(--secondary));
-    margin: auto
+    background-image: linear-gradient(
+        to left,
+        var(--primary),
+        var(--secondary)
+    );
+    margin: 40px auto 30px auto;
 }
 .back-button {
     height: auto;
@@ -140,12 +144,13 @@ body {
 
 /* Content styles */
 .content-container {
-    margin: 50px 0;
+    width: 75%;
+    margin: 50px auto;
 }
 .intro-container {
     text-align: center;
     border-bottom: 2px solid var(--border);
-    margin: 20px auto;
+    margin: 50px auto 20px auto;
     padding-bottom: 50px;
 }
 .intro-text {
@@ -171,29 +176,32 @@ body {
     text-align: center;
     margin: 80px 0 50px 0;
 }
-.cards-header {
-    padding-bottom: 20px;
-}
 .card {
     border-width: 1px;
     border-style: solid;
-    border-image: linear-gradient(to top right, var(--primary), var(--secondary), var(--background)) 1;
+    border-image: linear-gradient(
+            to top right,
+            var(--primary),
+            var(--secondary),
+            var(--background)
+        )
+        1;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     margin: 40px 0;
     padding: 20px;
 }
-/* .card-title {}
-.card-date {} */
 .card-summary {
     font-style: italic;
 }
-.card-tags {
+.card-tags,
+.blog-tags-container {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
-.card-tag {
+.card-tag,
+.blog-tag {
     background-color: var(--secondary);
     color: var(--text);
     border-radius: 5px;
@@ -222,7 +230,7 @@ body {
 }
 .story-content {
     width: 75%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     text-align: justify;
     font-size: 1.1rem;
     line-height: 35px;
@@ -233,12 +241,36 @@ body {
     text-indent: 40px;
 }
 .story-end {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
     font-weight: bold;
     margin: 40px 0;
     font-size: 1.2rem;
     color: var(--text);
+}
+
+/* Blog post styles */
+.blog-img-container {
+    width: 100%;
+    text-align: center;
+    margin: 50px auto;
+}
+.blog-img {
+    height: auto;
+    max-width: 100%;
+}
+.blog-date {
+    margin: 10px 0 25px 0;
+}
+.blog-tags-container {
+    margin-bottom: 50px;
+}
+.blog-content {
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 35px;
+    font-size: 1.1rem;
+    margin: 50px auto;
 }
 
 /* Footer styles */
@@ -255,7 +287,9 @@ body {
 
 /* Media styles */
 @media (max-width: 950px) {
-    .main-container {
+    .main-container,
+    .content-container,
+    .story-content {
         width: 90%;
     }
     .header-container {
@@ -273,7 +307,6 @@ body {
         display: block;
     }
     .story-content {
-        width: 90%;
         line-height: 30px;
         letter-spacing: 0;
     }
