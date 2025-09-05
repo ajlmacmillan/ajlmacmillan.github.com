@@ -306,7 +306,8 @@ body {
     #burger-icon {
         display: block;
     }
-    .story-content {
+    .story-content,
+    .blog-content {
         line-height: 30px;
         letter-spacing: 0;
     }
