@@ -289,7 +289,8 @@ body {
 @media (max-width: 950px) {
     .main-container,
     .content-container,
-    .story-content {
+    .story-content,
+    .blog-content {
         width: 90%;
     }
     .header-container {
