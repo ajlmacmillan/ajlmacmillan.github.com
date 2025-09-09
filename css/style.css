@@ -229,7 +229,7 @@ body {
     padding: 50px 0;
 }
 .story-content {
-    width: 75%;
+    width: 80%;
     font-family: "Courier New", Courier, monospace;
     text-align: justify;
     font-size: 1.1rem;
@@ -287,11 +287,13 @@ body {
 
 /* Media styles */
 @media (max-width: 950px) {
-    .main-container,
+    .main-container {
+        width: 90%;
+    }
     .content-container,
     .story-content,
     .blog-content {
-        width: 90%;
+        width: 100%;
     }
     .header-container {
         display: none;
