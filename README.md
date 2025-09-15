@@ -20,14 +20,15 @@ The site can be found [here](https://www.livingcopy.uk/)
 ## 📁 Folder Structure
 
 ```text
-├── css/             # Site styling
-├── data/            # Data files for site content
-├── img/             # Images
-├── js/              # SIte interactivity
-├── pages/           # Site HTML pages
-├── CNAME            # GitHub Pages DNS name
-├── index.html       # Site landing page
-└── README.md        # This README.md file
+├── css/                  # Site styling
+├── data/                 # Data files for site content
+├── img/                  # Images
+├── js/                   # SIte interactivity
+├── pages/                # Site HTML pages
+├── CNAME                 # GitHub Pages DNS name
+├── CONTRIBUTING.md       # Repo contribution guidelines
+├── index.html            # Site landing page
+└── README.md             # This README.md file
 ```
 
 ## 🧑‍💻 How to Run Locally
