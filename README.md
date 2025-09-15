@@ -38,3 +38,7 @@ git clone https://github.com/ajlmacmillan/ajlmacmillan.github.com.git
 cd ajlmacmillan.github.com.git
 xdg-open index.html
 ```
+
+## 🙌 Contributing
+
+Contributions are welcome if you find issues with the site. Please follow the [contributing guidelines](https://github.com/ajlmacmillan/ajlmacmillan.github.com/blob/main/CONTRIBUTING.md) and check for open [issues](https://github.com/ajlmacmillan/ajlmacmillan.github.com/issues).
