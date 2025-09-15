@@ -2,6 +2,7 @@
 :root {
     --background: #fffafa;
     --text: #5e5e5e;
+    --shadow: #bebebe;
     --primary: #fc4700;
     --secondary: #fddc21;
     --accent: #e00000;
@@ -187,6 +188,16 @@ body {
 }
 .bmac-container {
     margin: 40px 0 30px 0;
+}
+.bmac-img {
+    height: 50px;
+    width: 210px;
+    border-radius: 5px;
+}
+.bmac-img:hover {
+    box-shadow: 5px 5px 15px var(--shadow);
+    transform: translateY(-5px);
+    transition: ease-in-out 0.2s;
 }
 
 /* Cards */
