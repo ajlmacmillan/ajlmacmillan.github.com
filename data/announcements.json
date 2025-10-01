@@ -1,6 +1,12 @@
 {
     "data": [
         {
+            "title": "&#128218; New Creative Project Added",
+            "description": "A new creative writing project titled 'Samoveen' has been added to the Creative section. Follow Akstos on his interstellar journey to expand humanities footprint, and face the consequences of enslaving the bio-machines needed for survival.",
+            "date": "1st October, 2025",
+            "url": "./pages/creative/samoveen.html"
+        },
+        {
             "title": "&#128204; Blog Post Published",
             "description": "How hard can it be to write a book? Based on my experience, it can take a very long time, can require a lot of back filling, and feel like the end is a distant dream. Joy and hope however, are ever present.",
             "date": "5th, September 2025",

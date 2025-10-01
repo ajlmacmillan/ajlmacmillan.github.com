@@ -274,6 +274,9 @@ body {
 .story-content p {
     text-indent: 40px;
 }
+.p-squeeze {
+    margin : 0;
+}
 .story-end {
     font-family: "Courier New", Courier, monospace;
     text-align: center;
