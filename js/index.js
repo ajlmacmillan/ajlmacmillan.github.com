@@ -1,19 +1,19 @@
 (function () {
-    console.log("JavaScript is running!");
-
     const burgerIcon = document.getElementById("burger-icon");
     const closeIcon = document.getElementById("close-icon");
     const mobileNav = document.querySelector(".mobile-nav-container");
 
-    burgerIcon.addEventListener("click", function () {
-        closeIcon.style.display = "block";
-        mobileNav.style.display = "flex";
-    });
+    if (burgerIcon) {
+        burgerIcon.addEventListener("click", function () {
+            closeIcon.style.display = "block";
+            mobileNav.style.display = "flex";
+        });
 
-    closeIcon.addEventListener("click", function () {
-        closeIcon.style.display = "none";
-        mobileNav.style.display = "none";
-    });
+        closeIcon.addEventListener("click", function () {
+            closeIcon.style.display = "none";
+            mobileNav.style.display = "none";
+        });
+    }
 
     window.addEventListener("load", () => {
         // get the path to determine JSON file
@@ -28,7 +28,7 @@
         };
 
         // get JSON data file name based on path
-        let dataFile = "announcements.json"; // default file
+        let dataFile = ""; // default file
         for (const [key, value] of Object.entries(fileMap)) {
             if (path.includes(key)) {
                 dataFile = value;
@@ -36,11 +36,13 @@
             }
         }
 
+        // if no matching file, exit
+        if (!dataFile) return;
+
         // fetch JSON data
         fetch(`https://www.livingcopy.uk/data/${dataFile}`)
             .then((response) => response.json())
             .then((json) => {
-                console.log(json);
                 switch (dataFile) {
                     case "announcements.json":
                         loadAnnouncements(json);
