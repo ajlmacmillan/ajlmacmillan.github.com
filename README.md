@@ -25,6 +25,7 @@ The site can be found [here](https://www.livingcopy.uk/)
 ├── img/                  # Images
 ├── js/                   # SIte interactivity
 ├── pages/                # Site HTML pages
+├── 404.html              # Custom 404 page
 ├── CNAME                 # GitHub Pages DNS name
 ├── CONTRIBUTING.md       # Repo contribution guidelines
 ├── index.html            # Site landing page
