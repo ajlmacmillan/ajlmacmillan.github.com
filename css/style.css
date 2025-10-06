@@ -322,6 +322,21 @@ body {
     font-size: 1rem;
 }
 
+/* 404 styles */
+.http-error-container {
+    text-align: center;
+    margin: 180px auto;
+}
+.http-error-link {
+    font-style: italic;
+    text-decoration: none;
+    color: var(--text);
+}
+.http-error-link:hover {
+    color: var(--primary);
+    transition: ease-in-out 0.2s;
+}
+
 /* Media styles */
 @media (max-width: 950px) {
     .main-container {
