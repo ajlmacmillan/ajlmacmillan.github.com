@@ -324,7 +324,7 @@ body {
 /* 404 styles */
 .http-error-container {
     text-align: center;
-    margin: 180px auto;
+    margin: 40px auto;
 }
 .http-error-link {
     font-style: italic;
