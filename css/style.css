@@ -7,6 +7,8 @@
     --secondary: #fddc21;
     --accent: #e00000;
     --border: #ececec;
+    --blog-border-primary: #862cec;
+    --blog-border-secondary: #00ffaa;
 }
 
 /* Core styles */
@@ -223,6 +225,14 @@ body {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     margin: 40px 0;
     padding: 20px;
+}
+.blog-card {
+    border-image: linear-gradient(
+        to top right,
+        var(--blog-border-primary),
+        var(--blog-border-secondary),
+        var(--background)
+    ) 1;
 }
 .card-summary {
     font-style: italic;

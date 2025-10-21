@@ -2,8 +2,8 @@
 
 ## 🌐 About
 
-This site is a space for me to share my journey into creative writing and copywriting.
-I'll add short works of fiction, blog posts, samples of copy, and links to other articles
+This site is a space for me to share my journey into creative writing.
+I'll add short works of fiction, blog posts, and include links to other articles
 or publications I find interesting or useful. I want to pursue writing as a hobby and
 potential income stream in more depth so this will allow me to document my findings and
 creations as I develop as a writer and content creator.

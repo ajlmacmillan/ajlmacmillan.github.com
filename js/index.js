@@ -24,7 +24,6 @@
             "index.html": "announcements.json",
             "pages/blog/main.html": "blog.json",
             "pages/creative/main.html": "creative.json",
-            "pages/portfolio/main.html": "portfolio.json",
         };
 
         // get JSON data file name based on path
@@ -53,9 +52,6 @@
                     case "creative.json":
                         loadTagged(json);
                         break;
-                    case "portfolio.json":
-                        loadPortfolioProjects(json);
-                        break;
                     default:
                         console.error("Unknown data file:", dataFile);
                 }
@@ -67,7 +63,7 @@ function loadAnnouncements(data) {
     const container = document.querySelector(".cards-container");
     data.data.forEach((item) => {
         const card = document.createElement("div");
-        card.className = "card";
+        card.className = item.type == "blog" ? "card blog-card" : "card";
 
         const title = document.createElement("h3");
         title.className = "card-title";
@@ -131,53 +127,6 @@ function loadTagged(data) {
         card.appendChild(description);
         card.appendChild(tags);
         card.appendChild(link);
-        container.appendChild(card);
-    });
-}
-
-function loadPortfolioProjects(data) {
-    const container = document.querySelector(".cards-container");
-    data.data.forEach((item) => {
-        const card = document.createElement("div");
-        card.className = "card";
-
-        const image = document.createElement("img");
-        image.className = "card-image";
-        image.src = item.image;
-        image.alt = item.title;
-
-        const metaContainer = document.createElement("div");
-        metaContainer.className = "card-meta";
-
-        const title = document.createElement("h3");
-        title.className = "card-title";
-        title.innerHTML = item.title;
-
-        const description = document.createElement("p");
-        description.className = "card-description";
-        description.innerHTML = item.description;
-
-        const company = document.createElement("p");
-        company.className = "card-company";
-        company.innerHTML = item.company;
-
-        const industry = document.createElement("p");
-        industry.className = "card-industry";
-        industry.innerHTML = item.industry;
-
-        const link = document.createElement("a");
-        link.className = "card-link";
-        link.href = item.url;
-        link.innerHTML = "View Project";
-
-        card.appendChild(image);
-        metaContainer.appendChild(title);
-        metaContainer.appendChild(date);
-        metaContainer.appendChild(description);
-        metaContainer.appendChild(company);
-        metaContainer.appendChild(industry);
-        metaContainer.appendChild(link);
-        card.appendChild(metaContainer);
         container.appendChild(card);
     });
 }
