@@ -7,8 +7,6 @@
     --secondary: #fddc21;
     --accent: #e00000;
     --border: #ececec;
-    --blog-border-primary: #5d348b;
-    --blog-border-secondary: #00ffaa;
 }
 
 /* Core styles */
@@ -229,8 +227,8 @@ body {
 .blog-card {
     border-image: linear-gradient(
         to top right,
-        var(--blog-border-primary),
-        var(--blog-border-secondary),
+        var(--secondary),
+        var(--primary),
         var(--background)
     ) 1;
 }
