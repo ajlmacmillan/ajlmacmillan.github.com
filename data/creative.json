@@ -1,6 +1,7 @@
 {
     "data": [
         {
+            "type": "creative",
             "title": "Samoveen",
             "description": "The Gelders of Samoveen are faced with a terrible choice. After humanity has expanded across galaxies, a failure in their protection systems leaves them vulnerable to the deadly threat of the bio-machines they depend on for survival...",
             "published": "1st October, 2025",
@@ -8,6 +9,7 @@
             "tags": ["sci-fi", "technology"]
         },
         {
+            "type": "creative",
             "title": "The Barn",
             "description": "A farmer wakes up to an eerie realisation that he does not know where his wife is and some of his livestock have been slaughtered. A mysterious wooden carving has appeared in the pig pen, leading to the farmers journey into the barn...",
             "published": "2nd September, 2025",

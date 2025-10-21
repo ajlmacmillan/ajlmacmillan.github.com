@@ -94,7 +94,7 @@ function loadTagged(data) {
     const container = document.querySelector(".cards-container");
     data.data.forEach((item) => {
         const card = document.createElement("div");
-        card.className = "card";
+        card.className = item.type == "blog" ? "card blog-card" : "card";
 
         const title = document.createElement("h3");
         title.className = "card-title";
