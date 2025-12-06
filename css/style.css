@@ -375,6 +375,7 @@ body {
     }
     .content-container,
     .story-content,
+    .story-content-no-indent,
     .blog-content {
         width: 100%;
     }
@@ -393,6 +394,7 @@ body {
         display: block;
     }
     .story-content,
+    .story-content-no-indent,
     .blog-content {
         line-height: 30px;
         letter-spacing: 0;
