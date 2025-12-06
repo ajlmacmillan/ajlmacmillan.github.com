@@ -270,11 +270,12 @@ body {
     margin-bottom: 30px;
     padding: 50px 0;
 }
-.story-content {
+.story-content,
+.story-content-no-indent {
     width: 80%;
     font-family: "Courier New", Courier, monospace;
     text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 35px;
     margin: 50px auto;
 }
@@ -283,6 +284,9 @@ body {
 }
 .p-squeeze {
     margin : 0;
+}
+.p-separator {
+    text-align: center;
 }
 .story-end {
     font-family: "Courier New", Courier, monospace;
