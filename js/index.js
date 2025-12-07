@@ -17,6 +17,7 @@
 
     window.addEventListener("load", () => {
         // get the path to determine JSON file
+        const root = window.location.origin;
         const path = window.location.href;
 
         // mapping of paths to JSON files
@@ -26,8 +27,13 @@
             "pages/creative/main.html": "creative.json",
         };
 
+        // check if we are on the root path
+        let dataFile = "";
+        if (path === root + "/" || path === root) {
+            dataFile = "announcements.json";
+        }
+
         // get JSON data file name based on path
-        let dataFile = ""; // default file
         for (const [key, value] of Object.entries(fileMap)) {
             if (path.includes(key)) {
                 dataFile = value;
@@ -39,7 +45,7 @@
         if (!dataFile) return;
 
         // fetch JSON data
-        fetch(`https://www.livingcopy.uk/data/${dataFile}`)
+        fetch(`${root}/data/${dataFile}`)
             .then((response) => response.json())
             .then((json) => {
                 switch (dataFile) {
