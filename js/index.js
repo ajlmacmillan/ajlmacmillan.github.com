@@ -86,7 +86,7 @@ function loadAnnouncements(data) {
         const link = document.createElement("a");
         link.className = "card-link";
         link.href = item.url;
-        link.innerHTML = "Read More";
+        link.innerHTML = `Read ${item.name}`.substring(0, 25) + "...";
 
         card.appendChild(title);
         card.appendChild(date);
@@ -126,7 +126,7 @@ function loadTagged(data) {
         const link = document.createElement("a");
         link.className = "card-link";
         link.href = item.url;
-        link.innerHTML = "Read More";
+        link.innerHTML = `Read ${item.title}`.substring(0, 25) + "...";
 
         card.appendChild(title);
         card.appendChild(published);

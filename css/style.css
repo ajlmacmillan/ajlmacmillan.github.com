@@ -157,6 +157,7 @@ body {
 .intro-text {
     width: 80%;
     font-size: 1.4rem;
+    font-weight: bold;
     color: var(--text);
     line-height: 35px;
     letter-spacing: 1px;
@@ -343,10 +344,12 @@ body {
 .footer-text {
     color: var(--primary);
     font-size: 1rem;
+    font-weight: bold;
 }
 .footer-link {
     text-decoration: none;
     color: var(--primary);
+    font-weight: bold;
 }
 .footer-link:hover {
     color: var(--accent);

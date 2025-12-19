@@ -1,6 +1,7 @@
 {
     "data": [
         {
+            "name": "Raging Vision",
             "type": "creative",
             "title": "&#128218; New Creative Project Added",
             "description": "A new creative writing project titled 'Raging Vision' has been added to the Creative section. Delve into a dystopian nightmare where vision is the key to survival, and unravel the tragedy behind the madness.",
@@ -8,6 +9,7 @@
             "url": "./pages/creative/raging_vision.html"
         },
         {
+            "name": "Samoveen",
             "type": "creative",
             "title": "&#128218; New Creative Project Added",
             "description": "A new creative writing project titled 'Samoveen' has been added to the Creative section. Follow Akstos on his interstellar journey to expand humanities footprint, and face the consequences of enslaving the bio-machines needed for survival.",
@@ -15,6 +17,7 @@
             "url": "./pages/creative/samoveen.html"
         },
         {
+            "name": "How hard can it be to write a book?",
             "type": "blog",
             "title": "&#128204; Blog Post Published",
             "description": "How hard can it be to write a book? Based on my experience, it can take a very long time, can require a lot of back filling, and feel like the end is a distant dream. Joy and hope however, are ever present.",
@@ -22,6 +25,7 @@
             "url": "./pages/blog/how_hard_can_it_be_to_write_a_book.html"
         },
         {
+            "name": "The Barn",
             "type": "creative",
             "title": "&#128218; New Creative Project Added",
             "description": "A new creative writing project titled 'The Barn' has been added to the Creative section. Explore the eerie tale of a farmer's unsettling discovery.",
