@@ -92,7 +92,7 @@ function loadAnnouncements(data) {
         card.appendChild(title);
         card.appendChild(date);
         card.appendChild(description);
-        container.appendChild(card);
+        container.appendChild(link);
     });
 }
 
@@ -133,6 +133,6 @@ function loadTagged(data) {
         card.appendChild(published);
         card.appendChild(description);
         card.appendChild(tags);
-        container.appendChild(card);
+        container.appendChild(link);
     });
 }
