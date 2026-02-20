@@ -5,7 +5,7 @@
             "title": "Raging Vision",
             "description": "A disturbing psychological thriller set in a dystopian future where vision is the most valuable asset you own. Follow a harrowing escape and the subsequent horror of discovering the truth beyond the new society...",
             "published": "6th December, 2025",
-            "url": "./raging_vision.html",
+            "url": "/pages/creative/ragingvision/",
             "tags": ["psychological", "dystopian", "thriller"]
         },
         {
@@ -13,7 +13,7 @@
             "title": "Samoveen",
             "description": "The Gelders of Samoveen are faced with a terrible choice. After humanity has expanded across galaxies, a failure in their protection systems leaves them vulnerable to the deadly threat of the bio-machines they depend on for survival...",
             "published": "1st October, 2025",
-            "url": "./samoveen.html",
+            "url": "/pages/creative/samoveen/",
             "tags": ["sci-fi", "technology"]
         },
         {
@@ -21,7 +21,7 @@
             "title": "The Barn",
             "description": "A farmer wakes up to an eerie realisation that he does not know where his wife is and some of his livestock have been slaughtered. A mysterious wooden carving has appeared in the pig pen, leading to the farmers journey into the barn...",
             "published": "2nd September, 2025",
-            "url": "./the_barn.html",
+            "url": "/pages/creative/thebarn/",
             "tags": ["folk", "suspense", "horror"]
         }
     ]

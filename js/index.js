@@ -16,32 +16,16 @@
     }
 
     window.addEventListener("load", () => {
-        // get the path to determine JSON file
-        const root = window.location.origin;
-        const path = window.location.href;
+        const path = window.location.pathname;
 
-        // mapping of paths to JSON files
-        const fileMap = {
-            "index.html": "announcements.json",
-            "pages/blog/main.html": "blog.json",
-            "pages/creative/main.html": "creative.json",
+        const routeMap = {
+            "/": "announcements.json",
+            "/blog/": "blog.json",
+            "/creative/": "creative.json"
         };
 
-        // check if we are on the root path
-        let dataFile = "";
-        if (path === root + "/" || path === root) {
-            dataFile = "announcements.json";
-        }
+        const dataFile = routeMap[path];
 
-        // get JSON data file name based on path
-        for (const [key, value] of Object.entries(fileMap)) {
-            if (path.includes(key)) {
-                dataFile = value;
-                break;
-            }
-        }
-
-        // if no matching file, exit
         if (!dataFile) return;
 
         // fetch JSON data
