@@ -343,15 +343,15 @@ body {
 }
 .footer-text {
     color: var(--primary);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 .footer-link {
     text-decoration: none;
-    color: var(--text);
+    color: var(--accent);
 }
 .footer-link:hover {
-    color: var(--accent);
+    color: var(--text);
     transition: ease-in-out 0.2s;
 }
 
