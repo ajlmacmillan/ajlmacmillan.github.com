@@ -17,6 +17,24 @@ body {
     background-color: var(--background);
     color: var(--text);
 }
+#skip-to-main {
+    position: absolute;
+    top: -10000px; /* Hide off-screen */
+    left: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+#skip-to-main:focus {
+    position: absolute; /* Show on focus */
+    top: 10px;
+    left: 10px;
+    width: auto;
+    height: auto;
+    background: #fff;
+    padding: 10px;
+    outline: 2px solid #000; /* Visible focus indicator */
+}
 .main-container {
     width: 60%;
     margin: auto;
