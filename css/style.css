@@ -342,13 +342,13 @@ body {
     margin-top: 20px;
 }
 .footer-text {
-    color: var(--text);
+    color: var(--primary);
     font-size: 1.1rem;
     font-weight: bold;
 }
 .footer-link {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--text);
 }
 .footer-link:hover {
     color: var(--accent);
