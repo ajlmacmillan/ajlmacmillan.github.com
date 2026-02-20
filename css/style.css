@@ -243,6 +243,11 @@ body {
     margin: 40px 0;
     padding: 20px;
 }
+.card:hover {
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: ease-in-out 0.3s;
+}
 .blog-card {
     border-image: linear-gradient(
         to top right,

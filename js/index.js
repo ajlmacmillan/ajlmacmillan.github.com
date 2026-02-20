@@ -68,6 +68,11 @@
 function loadAnnouncements(data) {
     const container = document.querySelector(".cards-container");
     data.data.forEach((item) => {
+        const link = document.createElement("a");
+        link.className = "card-link";
+        link.href = item.url;
+        link.setAttribute("aria-label", `Read ${item.title}`);
+
         const card = document.createElement("div");
         card.className = item.type == "blog" ? "card blog-card" : "card";
 
@@ -83,15 +88,10 @@ function loadAnnouncements(data) {
         description.className = "card-summary";
         description.innerHTML = item.description;
 
-        const link = document.createElement("a");
-        link.className = "card-link";
-        link.href = item.url;
-        link.innerHTML = `Read ${item.name}`.substring(0, 25) + "...";
-
+        link.appendChild(card);
         card.appendChild(title);
         card.appendChild(date);
         card.appendChild(description);
-        card.appendChild(link);
         container.appendChild(card);
     });
 }
@@ -99,6 +99,11 @@ function loadAnnouncements(data) {
 function loadTagged(data) {
     const container = document.querySelector(".cards-container");
     data.data.forEach((item) => {
+        const link = document.createElement("a");
+        link.className = "card-link";
+        link.href = item.url;
+        link.setAttribute("aria-label", `Read ${item.title}`);
+
         const card = document.createElement("div");
         card.className = item.type == "blog" ? "card blog-card" : "card";
 
@@ -123,16 +128,11 @@ function loadTagged(data) {
             tags.appendChild(tagSpan);
         });
 
-        const link = document.createElement("a");
-        link.className = "card-link";
-        link.href = item.url;
-        link.innerHTML = `Read ${item.title}`.substring(0, 25) + "...";
-
+        link.appendChild(card);
         card.appendChild(title);
         card.appendChild(published);
         card.appendChild(description);
         card.appendChild(tags);
-        card.appendChild(link);
         container.appendChild(card);
     });
 }
