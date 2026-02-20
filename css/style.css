@@ -278,10 +278,6 @@ body {
     text-decoration: none;
     color: var(--text);
 }
-.card-link:hover {
-    color: var(--accent);
-    transition: ease-in-out 0.2s;
-}
 
 /* Story styles */
 .story-container {
