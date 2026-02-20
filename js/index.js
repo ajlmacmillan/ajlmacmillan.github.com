@@ -108,7 +108,7 @@ function loadTagged(data) {
 
         const published = document.createElement("p");
         published.className = "card-date";
-        published.innerHTML = `Published: ${item.published}`;
+        published.innerHTML = `Published: ${item.date}`;
 
         const description = document.createElement("p");
         description.className = "card-summary";
