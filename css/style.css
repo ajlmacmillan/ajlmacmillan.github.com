@@ -348,10 +348,10 @@ body {
 }
 .footer-link {
     text-decoration: none;
-    color: var(--accent);
+    color: var(--primary);
 }
 .footer-link:hover {
-    color: var(--text);
+    color: var(--accent);
     transition: ease-in-out 0.2s;
 }
 
