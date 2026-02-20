@@ -20,8 +20,8 @@
 
         const routeMap = {
             "/": "announcements.json",
-            "/blog/": "blog.json",
-            "/creative/": "creative.json"
+            "/pages/blog/": "blog.json",
+            "/pages/creative/": "creative.json"
         };
 
         const dataFile = routeMap[path];
@@ -29,7 +29,7 @@
         if (!dataFile) return;
 
         // fetch JSON data
-        fetch(`${root}/data/${dataFile}`)
+        fetch(`/data/${dataFile}`)
             .then((response) => response.json())
             .then((json) => {
                 switch (dataFile) {
