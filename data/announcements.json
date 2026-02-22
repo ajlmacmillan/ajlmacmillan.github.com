@@ -1,6 +1,14 @@
 {
     "data": [
         {
+            "name": "Commitment Struggle: Finding Time To Write",
+            "type": "blog",
+            "title": "&#128204; Blog Post Published",
+            "description": "Here I'll discuss the fact that my commitment to this site has dropped off recently. Not for lack of desire to write but because life is busy and it's not always easy to do things for yourself.",
+            "date": "22 February, 2026",
+            "url": "/pages/blog/2/"
+        },
+        {
             "name": "Raging Vision",
             "type": "creative",
             "title": "&#128218; New Creative Project Added",
