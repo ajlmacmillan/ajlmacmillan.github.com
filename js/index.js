@@ -52,6 +52,8 @@
 function loadAnnouncements(data) {
     const container = document.querySelector(".cards-container");
     data.data.forEach((item) => {
+        const listItem = document.createElement("li");
+        listItem.className = "card-list-item";
         const link = document.createElement("a");
         link.className = "card-link";
         link.href = item.url;
@@ -72,17 +74,20 @@ function loadAnnouncements(data) {
         description.className = "card-summary";
         description.innerHTML = item.description;
 
+        listItem.appendChild(link);
         link.appendChild(card);
         card.appendChild(title);
         card.appendChild(date);
         card.appendChild(description);
-        container.appendChild(link);
+        container.appendChild(listItem);
     });
 }
 
 function loadTagged(data) {
     const container = document.querySelector(".cards-container");
     data.data.forEach((item) => {
+        const listItem = document.createElement("li");
+        listItem.className = "card-list-item";
         const link = document.createElement("a");
         link.className = "card-link";
         link.href = item.url;
@@ -112,11 +117,12 @@ function loadTagged(data) {
             tags.appendChild(tagSpan);
         });
 
+        listItem.appendChild(link);
         link.appendChild(card);
         card.appendChild(title);
         card.appendChild(published);
         card.appendChild(description);
         card.appendChild(tags);
-        container.appendChild(link);
+        container.appendChild(listItem);
     });
 }
