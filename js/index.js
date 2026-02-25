@@ -57,7 +57,6 @@ function loadAnnouncements(data) {
         const link = document.createElement("a");
         link.className = "card-link";
         link.href = item.url;
-        link.setAttribute("aria-label", `Read ${item.title}`);
 
         const card = document.createElement("div");
         card.className = item.type == "blog" ? "card blog-card" : "card";
@@ -91,7 +90,6 @@ function loadTagged(data) {
         const link = document.createElement("a");
         link.className = "card-link";
         link.href = item.url;
-        link.setAttribute("aria-label", `Read ${item.title}`);
 
         const card = document.createElement("div");
         card.className = item.type == "blog" ? "card blog-card" : "card";
