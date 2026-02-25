@@ -371,7 +371,6 @@ body {
     font-weight: bold;
 }
 .footer-link {
-    font-style: "italic";
     color: var(--primary);
 }
 .footer-link:hover {
