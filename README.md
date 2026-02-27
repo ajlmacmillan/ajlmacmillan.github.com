@@ -44,6 +44,32 @@ cd ajlmacmillan.github.com.git
 xdg-open index.html
 ```
 
+## 🧪 Tests
+
+Tests are run using client-side JavaScript in the browser. They use the following 2 files only available in the `test` branch:
+
+```bash
+/pages/test/index.html
+/js/tests.js
+```
+
+Clone the `test` branch
+
+```bash
+git clone --single-branch --branch test https://github.com/ajlmacmillan/ajlmacmillan.github.com.git
+```
+
+Then launch the app using a local HTTP server (I am using Python http.server)
+
+```bash
+python3 -m http.server 5000
+```
+
+To see the test cases:
+ - Go to the Living Copy [test page](http://localhost:5000/pages/test/) in your browser
+ - Open the `DevTools console` to see the test cases
+ - Stop the local HTTP server to kill the connection
+
 ## 🙌 Contributing
 
 Contributions are welcome if you find issues with the site. Please follow the [contributing guidelines](https://github.com/ajlmacmillan/ajlmacmillan.github.com/blob/main/CONTRIBUTING.md) and check for open [issues](https://github.com/ajlmacmillan/ajlmacmillan.github.com/issues).
