@@ -1,30 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Home page for Living Copy, the blog and creative space for Andrew Macmillan" />
         <meta
-            property="og:url"
-            content="https://www.livingcopy.uk/"
+            name="description"
+            content="Home page for Living Copy, the blog and creative space for Andrew Macmillan"
         />
+        <meta property="og:url" content="https://www.livingcopy.uk/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Living Copy" />
-        <meta
-            property="og:description"
-            content="Blog and creative space for Andrew Macmillan"
-        />
-        <meta
-            property="og:image"
-            content="https://www.livingcopy.uk/img/living_copy_og_img.png"
-        />
+        <meta property="og:description" content="Blog and creative space for Andrew Macmillan" />
+        <meta property="og:image" content="https://www.livingcopy.uk/img/living_copy_og_img.png" />
         <title>Living Copy</title>
-        <link rel="canonical" href="https://www.livingcopy.uk">
-        <link
-            rel="shortcut icon"
-            href="/img/favicon/favicon.ico"
-            type="image/x-icon"
-        />
+        <link rel="canonical" href="https://www.livingcopy.uk" />
+        <link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="/css/style.css" />
     </head>
     <body>
@@ -44,46 +34,38 @@
                 <nav class="nav-container">
                     <a class="nav-link" href="/pages/blog/">Blog</a>
                     <span class="nav-seperator"> | </span>
-                    <a class="nav-link" href="/pages/creative/"
-                        >Creative</a
-                    >
+                    <a class="nav-link" href="/pages/creative/">Creative</a>
                 </nav>
             </header>
             <!-- Mobile header -->
             <header class="mobile-header-container">
                 <h1>
                     <a class="mobile-logo-container" href="/">
-                        <img
-                            class="mobile-header-logo"
-                            src="/img/logo.png"
-                            alt="Living Copy home page logo"
-                        />
+                        <img class="mobile-header-logo" src="/img/logo.png" alt="Living Copy home page logo" />
                     </a>
                 </h1>
-                <img
-                    id="burger-icon"
-                    src="/img/burger-menu.svg"
-                    alt="Open mobile navigation menu icon"
-                />
-                <nav class="mobile-nav-container">
-                    <a class="mobile-nav-link" href="/pages/blog/"
-                        >Blog</a
-                    >
-                    <a class="mobile-nav-link" href="/pages/creative/"
-                        >Creative</a
-                    >
+                <button
+                    class="burger"
+                    aria-label="Toggle navigation menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-nav-container"
+                >
+                    <span class="burger__bar"></span>
+                    <span class="burger__bar"></span>
+                    <span class="burger__bar"></span>
+                </button>
+                <nav id="mobile-nav-container" hidden>
+                    <a class="mobile-nav-link" href="/pages/blog/">Blog</a>
+                    <a class="mobile-nav-link" href="/pages/creative/">Creative</a>
                 </nav>
-                <img id="close-icon" src="/img/close.svg" alt="Close mobile navigation menu icon" />
             </header>
             <!-- Main content -->
             <main id="main">
                 <div class="intro-container">
                     <p class="intro-text">
-                        <span class="intro-name">Living Copy</span> is the creative
-                        outlet of Andrew Macmillan, a writer and content creator
-                        based in the UK. Here you can find articles on my processes
-                        and ideas, along with a selection of short works of creative
-                        writing.
+                        <span class="intro-name">Living Copy</span> is the creative outlet of Andrew Macmillan, a writer
+                        and content creator based in the UK. Here you can find articles on my processes and ideas, along
+                        with a selection of short works of creative writing.
                     </p>
                 </div>
                 <div class="content-container">
@@ -91,21 +73,13 @@
                         <h2 class="cards-header">Announcements</h2>
                         <span class="divider"></span>
                     </div>
-                    <ul class="cards-container">
-                    </ul>
+                    <ul class="cards-container"></ul>
                     <div class="index-page-links-container">
                         <h2 id="contact" class="page-header">Contact</h2>
                         <span class="divider"></span>
-                        <p class="page-text">
-                            &#128075; Want to discuss my work, or simply reach out
-                            to say hi?
-                        </p>
-                        <p class="page-text">
-                            <b>Email:</b> ajlmacmillan@livingcopy.uk
-                        </p>
-                        <p class="page-text">
-                            &#128227; Found an issue with the content on this site?
-                        </p>
+                        <p class="page-text">&#128075; Want to discuss my work, or simply reach out to say hi?</p>
+                        <p class="page-text"><b>Email:</b> ajlmacmillan@livingcopy.uk</p>
+                        <p class="page-text">&#128227; Found an issue with the content on this site?</p>
                         <p class="page-text">
                             This site is hosted on GitHub and is open to PRs.<a
                                 class="repo-link"
@@ -118,22 +92,13 @@
                         <h2 id="support-header" class="page-header">Support</h2>
                         <span class="divider"></span>
                         <p class="page-text">
-                            If the freely available content on this site brings any
-                            enjoyment or value to you, please consider donating the
-                            price of a coffee to show your support. Donations do not
-                            affect output, the same content will be available to
-                            all.
+                            If the freely available content on this site brings any enjoyment or value to you, please
+                            consider donating the price of a coffee to show your support. Donations do not affect
+                            output, the same content will be available to all.
                         </p>
                         <div class="bmac-container">
-                            <a
-                                href="https://www.buymeacoffee.com/andrewmacmillan"
-                                target="_blank"
-                            >
-                                <img
-                                    class="bmac-img"
-                                    src="/img/default-yellow.png"
-                                    alt="Buy Me A Coffee button"
-                                />
+                            <a href="https://www.buymeacoffee.com/andrewmacmillan" target="_blank">
+                                <img class="bmac-img" src="/img/default-yellow.png" alt="Buy Me A Coffee button" />
                             </a>
                         </div>
                     </div>
@@ -142,9 +107,7 @@
             <footer class="footer-container">
                 <p class="footer-text">
                     Andrew Macmillan &copy; 2026 &nbsp;|&nbsp;
-                    <a class="footer-link" href="/pages/privacy/"
-                        >Privacy Policy</a
-                    >
+                    <a class="footer-link" href="/pages/privacy/">Privacy Policy</a>
                 </p>
             </footer>
         </div>

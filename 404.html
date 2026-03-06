@@ -1,40 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="HTTP request returned code 404 - the requested page was not found on the Living Copy website" />
+        <meta
+            name="description"
+            content="HTTP request returned code 404 - the requested page was not found on the Living Copy website"
+        />
         <meta property="og:url" content="https://www.livingcopy.uk/404.html" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="LivingCopy - 404" />
-        <meta
-            property="og:description"
-            content="Blog and creative space for Andrew Macmillan"
-        />
-        <meta
-            property="og:image"
-            content="https://www.livingcopy.uk/img/living_copy_og_img.png"
-        />
+        <meta property="og:description" content="Blog and creative space for Andrew Macmillan" />
+        <meta property="og:image" content="https://www.livingcopy.uk/img/living_copy_og_img.png" />
         <title>LivingCopy - 404</title>
-        <link
-            rel="shortcut icon"
-            href="/img/favicon/favicon.ico"
-            type="image/x-icon"
-        />
-        <link
-            rel="stylesheet"
-            href="/css/style.css"
-            type="text/css"
-        />
+        <link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="/css/style.css" type="text/css" />
     </head>
     <body>
         <div class="main-container">
             <!-- Desktop nav -->
             <header class="header-container">
-                <a
-                    class="logo-container"
-                    href="/"
-                >
+                <a class="logo-container" href="/">
                     <h1>
                         <img
                             class="header-logo"
@@ -44,81 +30,48 @@
                     </h1>
                 </a>
                 <nav class="nav-container">
-                    <a
-                        class="nav-link"
-                        href="/pages/blog/"
-                        >Blog</a
-                    >
+                    <a class="nav-link" href="/pages/blog/">Blog</a>
                     <span class="nav-seperator"> | </span>
-                    <a
-                        class="nav-link"
-                        href="/pages/creative/"
-                        >Creative</a
-                    >
+                    <a class="nav-link" href="/pages/creative/">Creative</a>
                 </nav>
             </header>
             <!-- Mobile header -->
             <header class="mobile-header-container">
                 <h1>
-                    <a class="mobile-logo-container"
-                        href="/">
-                        <img
-                            class="mobile-header-logo"
-                             src="/img/logo.png"
-                            alt="Living Copy home page logo"
-                        />
+                    <a class="mobile-logo-container" href="/">
+                        <img class="mobile-header-logo" src="/img/logo.png" alt="Living Copy home page logo" />
                     </a>
                 </h1>
-                <img
-                    id="burger-icon"
-                    src="/img/burger-menu.svg"
-                    alt="Open mobile navigation menu icon"
-                />
-                <nav class="mobile-nav-container">
-                    <a
-                        class="mobile-nav-link"
-                        href="/"
-                        >Home</a
-                    >
-                    <a
-                        class="mobile-nav-link"
-                        href="/pages/blog/"
-                        >Blog</a
-                    >
-                    <a
-                        class="mobile-nav-link"
-                        href="/pages/creative/"
-                        >Creative</a
-                    >
+                <button
+                    class="burger"
+                    aria-label="Toggle navigation menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-nav-container"
+                >
+                    <span class="burger__bar"></span>
+                    <span class="burger__bar"></span>
+                    <span class="burger__bar"></span>
+                </button>
+                <nav id="mobile-nav-container" hidden>
+                    <a class="mobile-nav-link" href="/">Home</a>
+                    <a class="mobile-nav-link" href="/pages/blog/">Blog</a>
+                    <a class="mobile-nav-link" href="/pages/creative/">Creative</a>
                 </nav>
-                <img
-                    id="close-icon"
-                    src="/img/close.svg"
-                    alt="Close mobile navigation menu icon"
-                />
             </header>
             <!-- Main content -->
             <main>
                 <div class="http-error-container">
                     <p class="intro-text">
-                        <span class="intro-name">404</span> unfortunately the page
-                        you are looking for does not exist. If you believe this is
-                        an error please contact me via one of the methods in the
-                        <b>Contact</b> section of the
-                        <a
-                            class="http-error-link"
-                            href="/#contact"
-                            >homepage</a
-                        >.
+                        <span class="intro-name">404</span> unfortunately the page you are looking for does not exist.
+                        If you believe this is an error please contact me via one of the methods in the
+                        <b>Contact</b> section of the <a class="http-error-link" href="/#contact">homepage</a>.
                     </p>
                 </div>
             </main>
             <footer class="footer-container">
                 <p class="footer-text">
                     Andrew Macmillan &copy; 2026 &nbsp;|&nbsp;
-                    <a class="footer-link" href="/pages/privacy/"
-                        >Privacy Policy</a
-                    >
+                    <a class="footer-link" href="/pages/privacy/">Privacy Policy</a>
                 </p>
             </footer>
         </div>
