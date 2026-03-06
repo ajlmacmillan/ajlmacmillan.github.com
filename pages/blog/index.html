@@ -1,30 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Blog page for the Living Copy website, a space for thinking out loud and documenting anything I have learnt to improve my writing style." />
         <meta
-            property="og:url"
-            content="https://www.livingcopy.uk/pages/blog/"
+            name="description"
+            content="Blog page for the Living Copy website, a space for thinking out loud and documenting anything I have learnt to improve my writing style."
         />
+        <meta property="og:url" content="https://www.livingcopy.uk/pages/blog/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Living Copy - Blog" />
-        <meta
-            property="og:description"
-            content="Blog and creative space for Andrew Macmillan"
-        />
-        <meta
-            property="og:image"
-            content="https://www.livingcopy.uk/img/living_copy_og_img.png"
-        />
+        <meta property="og:description" content="Blog and creative space for Andrew Macmillan" />
+        <meta property="og:image" content="https://www.livingcopy.uk/img/living_copy_og_img.png" />
         <title>Living Copy - Blog</title>
-        <link rel="canonical" href="https://www.livingcopy.uk/pages/blog/">
-        <link
-            rel="shortcut icon"
-            href="/img/favicon/favicon.ico"
-            type="image/x-icon"
-        />
+        <link rel="canonical" href="https://www.livingcopy.uk/pages/blog/" />
+        <link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="/css/style.css" />
     </head>
     <body>
@@ -43,48 +33,38 @@
                 <nav class="nav-container">
                     <a class="nav-link" href="/pages/blog/">Blog</a>
                     <span class="nav-seperator"> | </span>
-                    <a class="nav-link" href="/pages/creative/"
-                        >Creative</a
-                    >
+                    <a class="nav-link" href="/pages/creative/">Creative</a>
                 </nav>
             </header>
             <!-- Mobile header -->
             <header class="mobile-header-container">
                 <h1>
                     <a class="mobile-logo-container" href="/">
-                        <img
-                            class="mobile-header-logo"
-                            src="/img/logo.png"
-                            alt="Living Copy home page logo"
-                        />
+                        <img class="mobile-header-logo" src="/img/logo.png" alt="Living Copy home page logo" />
                     </a>
                 </h1>
-                <img
-                    id="burger-icon"
-                    src="/img/burger-menu.svg"
-                    alt="Open mobile navigation menu icon"
-                />
-                <nav class="mobile-nav-container">
+                <button
+                    class="burger"
+                    aria-label="Toggle navigation menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-nav-container"
+                >
+                    <span class="burger__bar"></span>
+                    <span class="burger__bar"></span>
+                    <span class="burger__bar"></span>
+                </button>
+                <nav id="mobile-nav-container" hidden>
                     <a class="mobile-nav-link" href="/">Home</a>
                     <a class="mobile-nav-link" href="/pages/blog/">Blog</a>
-                    <a class="mobile-nav-link" href="/pages/creative/"
-                        >Creative</a
-                    >
+                    <a class="mobile-nav-link" href="/pages/creative/">Creative</a>
                 </nav>
-                <img
-                    id="close-icon"
-                    src="/img/close.svg"
-                    alt="Close mobile navigation menu icon"
-                />
             </header>
             <main id="main">
                 <div class="intro-container">
                     <p class="intro-text">
-                        <span class="intro-name">Blog</span> space for thinking out
-                        loud and documenting anything I have learnt to improve my
-                        writing style. A place for journaling a new chapter in my
-                        personal development as much as source of information
-                        sharing to help others.
+                        <span class="intro-name">Blog</span> space for thinking out loud and documenting anything I have
+                        learnt to improve my writing style. A place for journaling a new chapter in my personal
+                        development as much as source of information sharing to help others.
                     </p>
                 </div>
                 <div class="content-container">
@@ -98,9 +78,7 @@
             <footer class="footer-container">
                 <p class="footer-text">
                     Andrew Macmillan &copy; 2026 &nbsp;|&nbsp;
-                    <a class="footer-link" href="/pages/privacy/"
-                        >Privacy Policy</a
-                    >
+                    <a class="footer-link" href="/pages/privacy/">Privacy Policy</a>
                 </p>
             </footer>
         </div>

@@ -1,19 +1,12 @@
 (function () {
-    const burgerIcon = document.getElementById("burger-icon");
-    const closeIcon = document.getElementById("close-icon");
-    const mobileNav = document.querySelector(".mobile-nav-container");
+    const burger = document.querySelector(".burger");
+    const nav = document.getElementById("mobile-nav-container");
 
-    if (burgerIcon) {
-        burgerIcon.addEventListener("click", function () {
-            closeIcon.style.display = "block";
-            mobileNav.style.display = "flex";
-        });
-
-        closeIcon.addEventListener("click", function () {
-            closeIcon.style.display = "none";
-            mobileNav.style.display = "none";
-        });
-    }
+    burger.addEventListener("click", () => {
+        const isOpen = burger.getAttribute("aria-expanded") === "true";
+        burger.setAttribute("aria-expanded", String(!isOpen));
+        nav.hidden = isOpen;
+    });
 
     window.addEventListener("load", () => {
         const path = window.location.pathname;
@@ -21,7 +14,7 @@
         const routeMap = {
             "/": "announcements.json",
             "/pages/blog/": "blog.json",
-            "/pages/creative/": "creative.json"
+            "/pages/creative/": "creative.json",
         };
 
         const dataFile = routeMap[path];
