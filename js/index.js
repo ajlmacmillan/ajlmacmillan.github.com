@@ -15,6 +15,7 @@
             "/": "announcements.json",
             "/pages/blog/": "blog.json",
             "/pages/creative/": "creative.json",
+            "/pages/journal/": "journal.json",
         };
 
         const dataFile = routeMap[path];
@@ -34,6 +35,9 @@
                         break;
                     case "creative.json":
                         loadTagged(json);
+                        break;
+                    case "journal.json":
+                        loadJournal(groupByDate(json));
                         break;
                     default:
                         console.error("Unknown data file:", dataFile);
@@ -115,5 +119,70 @@ function loadTagged(data) {
         card.appendChild(description);
         card.appendChild(tags);
         container.appendChild(listItem);
+    });
+}
+
+function groupByDate(json) {
+    const entries = json.data;
+    const groups = {};
+
+    entries.forEach((entry) => {
+        if (!groups[entry.date]) {
+            groups[entry.date] = [];
+        }
+
+        groups[entry.date].push(entry);
+    });
+
+    return groups;
+}
+
+function loadJournal(groups) {
+    const journal = document.querySelector(".journal-container");
+
+    const dates = Object.keys(groups);
+
+    dates.forEach((date, index) => {
+        const isRight = index % 2 === 1;
+
+        const day = document.createElement("li");
+        day.classList.add("day");
+        day.classList.add(isRight ? "day-right" : "day-left");
+
+        /* day divider */
+
+        const divider = document.createElement("div");
+        divider.classList.add("day-divider");
+        divider.textContent = formatDate(date);
+
+        day.appendChild(divider);
+
+        /* entries */
+
+        groups[date].forEach((entry) => {
+            const entryRow = document.createElement("div");
+            entryRow.classList.add("entry");
+
+            const bubble = document.createElement("div");
+            bubble.classList.add("bubble");
+            bubble.textContent = entry.message;
+
+            entryRow.appendChild(bubble);
+
+            day.appendChild(entryRow);
+        });
+
+        journal.appendChild(day);
+    });
+}
+
+function formatDate(dateStr) {
+    const d = new Date(dateStr);
+
+    return d.toLocaleDateString(undefined, {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+        year: "numeric",
     });
 }

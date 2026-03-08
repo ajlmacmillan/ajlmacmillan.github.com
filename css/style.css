@@ -132,7 +132,7 @@ body {
     height: 100vh;
     background-color: var(--background);
     margin: auto;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 #mobile-nav-container:not([hidden]) {
     display: flex;
@@ -141,7 +141,7 @@ body {
     font-size: 2rem;
     color: var(--text);
     text-decoration: none;
-    margin: 30px 0;
+    margin: 25px 0;
     cursor: pointer;
 }
 .mobile-nav-link:hover {
@@ -344,6 +344,62 @@ button {
 .card-link {
     text-decoration: none;
     color: var(--text);
+}
+
+/* Journal styles */
+.journal-content-container {
+    width: 100%;
+    margin: 100px auto;
+}
+.journal-container {
+    list-style: none;
+    padding: 0;
+    margin: 100px auto;
+}
+.day {
+    margin-bottom: 40px;
+}
+.day-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin: 30px 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #666;
+}
+
+/* the divider lines */
+
+.day-divider::before,
+.day-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
+.entry {
+    display: flex;
+    margin: 8px 0;
+}
+.day-left .entry {
+    justify-content: flex-start;
+}
+
+.day-right .entry {
+    justify-content: flex-end;
+}
+.bubble {
+    max-width: 70%;
+    padding: 12px 16px;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    line-height: 1.4;
+}
+.day-right .bubble {
+    background: #e6e6e6;
 }
 
 /* Story styles */
