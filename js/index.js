@@ -15,6 +15,7 @@
             "/": "announcements.json",
             "/pages/blog/": "blog.json",
             "/pages/creative/": "creative.json",
+            "/pages/journal/": "journal.json",
         };
 
         const dataFile = routeMap[path];
@@ -34,6 +35,9 @@
                         break;
                     case "creative.json":
                         loadTagged(json);
+                        break;
+                    case "journal.json":
+                        loadJournal(json);
                         break;
                     default:
                         console.error("Unknown data file:", dataFile);
@@ -114,6 +118,30 @@ function loadTagged(data) {
         card.appendChild(published);
         card.appendChild(description);
         card.appendChild(tags);
+        container.appendChild(listItem);
+    });
+}
+
+function loadJournal(data) {
+    const container = document.querySelector(".journal-container");
+    data.data.forEach((item) => {
+        const listItem = document.createElement("li");
+        listItem.className = "journal-list-item";
+
+        const journalEntry = document.createElement("div");
+        journalEntry.className = "journal-entry";
+
+        const published = document.createElement("p");
+        published.className = "journal-date";
+        published.innerHTML = `${item.date} @ ${item.time}`;
+
+        const message = document.createElement("p");
+        message.className = "journal-message";
+        message.innerHTML = item.message;
+
+        listItem.appendChild(journalEntry);
+        journalEntry.appendChild(published);
+        journalEntry.appendChild(message);
         container.appendChild(listItem);
     });
 }

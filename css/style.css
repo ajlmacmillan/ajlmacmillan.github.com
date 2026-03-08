@@ -132,7 +132,7 @@ body {
     height: 100vh;
     background-color: var(--background);
     margin: auto;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 #mobile-nav-container:not([hidden]) {
     display: flex;
@@ -141,7 +141,7 @@ body {
     font-size: 2rem;
     color: var(--text);
     text-decoration: none;
-    margin: 30px 0;
+    margin: 25px 0;
     cursor: pointer;
 }
 .mobile-nav-link:hover {
