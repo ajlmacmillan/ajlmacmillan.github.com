@@ -346,6 +346,26 @@ button {
     color: var(--text);
 }
 
+/* Journal styles */
+.journal-container {
+    margin: 20px auto;
+}
+.journal-list-item {
+    list-style: none;
+}
+.journal-entry {
+    border-left: 3px var(--primary) solid;
+    margin: 30px 0;
+    padding-left: 20px;
+}
+.journal-date {
+    font-weight: bold;
+}
+.journal-message {
+    letter-spacing: 1px;
+    color: var(--text);
+}
+
 /* Story styles */
 .story-container {
     color: var(--text);
