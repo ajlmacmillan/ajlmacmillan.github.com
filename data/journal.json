@@ -1,6 +1,11 @@
 {
     "data": [
         {
+            "id": "2",
+            "message": "Got half an hour of writing done on my phone this evening. Phone appears to he working well as it's always handy",
+            "date": "2026-03-08"
+        },
+        {
             "id": "1",
             "message": "Genesis entry for the journal page. Let's see where this goes!",
             "date": "2026-03-08"
