@@ -43,5 +43,9 @@
   <loc>https://www.livingcopy.uk/pages/privacy/</loc>
   <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://www.livingcopy.uk/pages/journal/</loc>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
