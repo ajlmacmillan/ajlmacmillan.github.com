@@ -37,7 +37,7 @@
                         loadTagged(json);
                         break;
                     case "journal.json":
-                        loadJournal(json);
+                        loadJournal(groupByDate(json));
                         break;
                     default:
                         console.error("Unknown data file:", dataFile);
@@ -122,26 +122,67 @@ function loadTagged(data) {
     });
 }
 
-function loadJournal(data) {
-    const container = document.querySelector(".journal-container");
-    data.data.forEach((item) => {
-        const listItem = document.createElement("li");
-        listItem.className = "journal-list-item";
+function groupByDate(json) {
+    const entries = json.data;
+    const groups = {};
 
-        const journalEntry = document.createElement("div");
-        journalEntry.className = "journal-entry";
+    entries.forEach((entry) => {
+        if (!groups[entry.date]) {
+            groups[entry.date] = [];
+        }
 
-        const published = document.createElement("p");
-        published.className = "journal-date";
-        published.innerHTML = `${item.date} @ ${item.time}`;
+        groups[entry.date].push(entry);
+    });
 
-        const message = document.createElement("p");
-        message.className = "journal-message";
-        message.innerHTML = item.message;
+    return groups;
+}
 
-        listItem.appendChild(journalEntry);
-        journalEntry.appendChild(published);
-        journalEntry.appendChild(message);
-        container.appendChild(listItem);
+function loadJournal(groups) {
+    const journal = document.querySelector(".journal-container");
+
+    const dates = Object.keys(groups);
+
+    dates.forEach((date, index) => {
+        const isRight = index % 2 === 1;
+
+        const day = document.createElement("li");
+        day.classList.add("day");
+        day.classList.add(isRight ? "day-right" : "day-left");
+
+        /* day divider */
+
+        const divider = document.createElement("div");
+        divider.classList.add("day-divider");
+        divider.textContent = formatDate(date);
+
+        day.appendChild(divider);
+
+        /* entries */
+
+        groups[date].forEach((entry) => {
+            const entryRow = document.createElement("div");
+            entryRow.classList.add("entry");
+
+            const bubble = document.createElement("div");
+            bubble.classList.add("bubble");
+            bubble.textContent = entry.message;
+
+            entryRow.appendChild(bubble);
+
+            day.appendChild(entryRow);
+        });
+
+        journal.appendChild(day);
+    });
+}
+
+function formatDate(dateStr) {
+    const d = new Date(dateStr);
+
+    return d.toLocaleDateString(undefined, {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+        year: "numeric",
     });
 }
