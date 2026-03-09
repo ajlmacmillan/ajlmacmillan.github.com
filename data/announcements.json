@@ -1,11 +1,19 @@
 {
     "data": [
         {
+            "name": "Feature Release: Journal",
+            "type": "feature",
+            "title": "&#128640; Feature Release: Journal",
+            "description": "I've added a journal section to the site where I can post quick updates on writing activities and progress.",
+            "date": "8th March, 2026",
+            "url": "/pages/journal/"
+        },
+        {
             "name": "Commitment Struggle - Finding Time To Write",
             "type": "blog",
             "title": "&#128204; Blog Post: Commitment Struggle - Finding Time To Write",
             "description": "Here I'll discuss the fact that my commitment to this site has dropped off recently. Not for lack of desire to write but because life is busy and it's not always easy to do things for yourself.",
-            "date": "22 February, 2026",
+            "date": "22nd February, 2026",
             "url": "/pages/blog/2/"
         },
         {

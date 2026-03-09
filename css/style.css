@@ -6,6 +6,8 @@
     --primary: #fc4700;
     --secondary: #fddc21;
     --accent: #e00000;
+    --feature-primary: #08f37a;
+    --feature-secondary: #0beb95;
     --border: #ececec;
     --size: 44px;
     --line-width: 28px;
@@ -323,6 +325,9 @@ button {
 }
 .blog-card {
     border-image: linear-gradient(to top right, var(--secondary), var(--primary), var(--background)) 1;
+}
+.feature-card {
+    border-image: linear-gradient(to top right, var(--feature-secondary), var(--feature-primary), var(--background)) 1;
 }
 .card-summary {
     font-style: italic;

@@ -56,7 +56,17 @@ function loadAnnouncements(data) {
         link.href = item.url;
 
         const card = document.createElement("div");
-        card.className = item.type == "blog" ? "card blog-card" : "card";
+        card.classList.add("card");
+        switch (item.type) {
+            case "feature":
+                card.classList.add("feature-card");
+                break;
+            case "blog":
+                card.classList.add("blog-card");
+                break;
+            default:
+                break;
+        }
 
         const title = document.createElement("h3");
         title.className = "card-title";
